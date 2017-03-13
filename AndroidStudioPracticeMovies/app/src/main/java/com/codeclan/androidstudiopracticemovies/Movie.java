@@ -42,6 +42,6 @@ public class Movie {
 
     @Override
     public String toString(){
-        return "Title: " + title + "Genre: " + genre + "Ranking: " + ranking;
+        return "Title: " + title + " Genre: " + genre + " Ranking: " + ranking;
     }
 }

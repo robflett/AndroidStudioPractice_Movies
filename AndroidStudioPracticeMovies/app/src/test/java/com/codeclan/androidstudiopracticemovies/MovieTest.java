@@ -21,4 +21,9 @@ public class MovieTest {
         assertEquals("Action", movie.getGenre());
         assertEquals(1, movie.getRanking());
     }
+
+    @Test
+    public void testToString(){
+        assertEquals("Title: Face/Off Genre: Action Ranking: 1", movie.toString());
+    }
 }
