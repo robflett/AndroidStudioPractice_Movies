@@ -26,4 +26,20 @@ import java.util.ArrayList;
     public int getLength() {
         return movies.size();
     }
+
+
+
+    public int getMovieIndex(String item)
+    {
+        for (int i = 0; i < movies.size(); i++)
+        {
+            Movie movie = movies.get(i);
+            if (item.equals(movie.getTitle()))
+            {
+                return i;
+            }
+        }
+
+        return -1;
+    }
 }

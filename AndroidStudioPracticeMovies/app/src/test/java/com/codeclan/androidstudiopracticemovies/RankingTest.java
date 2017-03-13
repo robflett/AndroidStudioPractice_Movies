@@ -31,4 +31,9 @@ public class RankingTest {
         assertEquals(2, movies.getLength() );
     }
 
+    @Test
+    public void testGetIndexByTitle(){
+        assertEquals(1, movies.getMovieIndex("Jaws") );
+    }
+
 }
