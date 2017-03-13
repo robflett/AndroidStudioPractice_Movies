@@ -11,6 +11,7 @@ import java.util.ArrayList;
         private ArrayList<Movie> movies;
 
 
+
     public Ranking(){
         this.movies = new ArrayList<Movie>();
     }
@@ -29,17 +30,25 @@ import java.util.ArrayList;
 
 
 
-    public int getMovieIndex(String item)
-    {
-        for (int i = 0; i < movies.size(); i++)
-        {
+    public int getMovieIndex(String item) {
+        for (int i = 0; i < movies.size(); i++) {
             Movie movie = movies.get(i);
-            if (item.equals(movie.getTitle()))
-            {
+            if (item.equals(movie.getTitle())) {
                 return i;
             }
         }
 
         return -1;
+    }
+
+//    public Movie getMovieByIndex(int index){
+//
+//        return movies.get(index);
+//        }
+//    }
+
+    public void replaceLastEntryInArrayList(Movie movie) {
+        movies.remove(movies.size() - 1);
+        movies.add(movie);
     }
 }
