@@ -41,11 +41,11 @@ import java.util.ArrayList;
         return -1;
     }
 
-//    public Movie getMovieByIndex(int index){
-//
-//        return movies.get(index);
-//        }
-//    }
+    public Movie getMovieByIndex(int index){
+
+        return movies.get(index);
+        }
+
 
     public void replaceLastEntryInArrayList(Movie movie) {
         movies.remove(movies.size() - 1);

@@ -38,10 +38,10 @@ public class RankingTest {
         assertEquals(1, movies.getMovieIndex("Jaws") );
     }
 
-//    @Test
-//    public void testGetMovieByIndex(){
-//        assertEquals("Jaws", movies.getMovieByIndex(1));
-//    }
+    @Test
+    public void testGetMovieByIndex(){
+        assertEquals(movie2, movies.getMovieByIndex(1));
+    }
 
     @Test
     public void testReplaceLastEntryInArrayList(){
